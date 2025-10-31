@@ -33,7 +33,7 @@ body {
 /* Conteúdo Principal */
 .conteudo {
     flex: 2;
-    margin-left: 80px;
+    margin-left: 10px;
     padding: 3px;
 }
 
