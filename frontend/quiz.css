@@ -27,7 +27,7 @@ body {
 
 .sidebar i {
   color: white;
-  font-size: 30px;
+  font-size: 25px;
   cursor: pointer;
   transition: transform 0.2s ease, color 0.2s ease;
 }
