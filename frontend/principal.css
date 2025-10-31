@@ -18,14 +18,8 @@ body {
     position: fixed;
 }
 
-.icones{
-    color: #5f1414;
-    display: grid;
-    gap: 50px;
-    margin-top: 90px;
-  }
 .menu-lateral i {
-    color: white;
+    color: #406113;
     font-size: 24px;
     cursor: pointer;
     transition: transform 0.2s ease, color 0.2s ease;
