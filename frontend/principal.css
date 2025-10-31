@@ -1,0 +1,199 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Literata", serif;
+    display: flex;
+    background-color: #fff;
+}
+
+/* Menu Lateral */
+.menu-lateral {
+    width: 80px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    gap: 40px;
+    position: fixed;
+}
+
+.icones{
+    color: #5f1414;
+    display: grid;
+    gap: 50px;
+    margin-top: 90px;
+  }
+.menu-lateral i {
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.menu-lateral i:hover {
+    transform: scale(1.2);
+    color: #b6d17a;
+}
+
+/* Conteúdo Principal */
+.conteudo {
+    flex: 2;
+    margin-left: 80px;
+    padding: 3px;
+}
+
+h1 {
+    text-align: center;
+    color: #3a5a15;
+    font-size: 34px;
+    font-weight: bold;
+    font-family: "Literata", serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+.conteudo img {
+    width: 60vw;
+    height: 1.5px;
+}
+
+/* Cards */
+.cards {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    background: #5b752f;
+    border-radius: 10px;
+    padding: 15px;
+    color: white;
+    align-items: center;
+    width: 60vw;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    align-items: center;
+}
+
+a.card {
+    text-decoration: none; 
+    color: inherit; 
+    color: #fff;
+  }
+  
+
+.card:hover {
+    background-color: #3f5e15;
+    transform: scale(1.02);
+    cursor: pointer;
+  }
+
+.card-icon {
+    font-size: 40px;
+    padding: 10px;
+}
+
+
+.card-text {
+    margin-left: 10px;
+}
+
+h3 {
+    margin: 0;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* Calendário */
+.calendario {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    color: black;
+    font-size: 24px;
+}
+
+.dias-semana {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.grade-calendario {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+.grade-calendario span {
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.grade-calendario span:hover {
+    background-color: #3f5e15;
+    transform: scale(1.02);
+    cursor: pointer;
+  }
+
+.dias-semana span{
+    font-size: 10px;
+}
+
+/* Agenda */
+.agenda {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.agenda p{
+    border-radius: 15px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.agenda p:hover {
+    background-color: #5079189a;
+    transform: scale(1.02);
+    cursor: pointer;
+  }
+
+
+.agenda h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.evento {
+    padding: 8px;
+    background: #e0e0e0;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.destaque {
+    background: #3a5a15;
+    color: white;
+}
+
+a {
+  color: white; /* Or any other desired color */
+  text-decoration: none; /* Removes the default underline */
+}
+
+a:visited {
+  color: white; /* Ensures visited links also don't turn purple */
+}
+

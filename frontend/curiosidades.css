@@ -1,0 +1,153 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Literata", serif;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(to bottom, #446b12, #698636);
+  color: #2f3329;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+/* Cabeçalho */
+header {
+  text-align: center;
+  padding: 40px 20px 20px;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  color: #f4f4f4;
+}
+
+.linha {
+  width: 95vw;
+  display: block;
+  margin: 10px auto 20px;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #e0e0e0;
+  margin: 8px 0 20px;
+}
+
+/* Input de busca */
+#search-input {
+  width: 60%;
+  max-width: 400px;
+  padding: 10px 15px;
+  border-radius: 12px;
+  border: 1px solid #d8e2c4;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+#search-input:focus {
+  border-color: #b6d17a;
+  box-shadow: 0 0 6px #b6d17a;
+}
+
+/* Container principal */
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.curiosidades-container {
+  width: 100%;
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Cards */
+.curiosidade-card {
+  background: #fff;
+  border-left: 6px solid #4b6521;
+  border-radius: 14px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  padding: 25px 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.curiosidade-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+}
+
+.curiosidade-card h3 {
+  font-size: 1.3rem;
+  color: #2f4f12;
+  margin-bottom: 10px;
+}
+
+.curiosidade-card p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.5;
+}
+
+
+/* Sidebar */
+.sidebar {
+  background-color: #2f4f20;
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 2;
+}
+
+.sidebar i {
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  align-items: center;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.icones{
+     color: #fff;
+    display: grid;
+    gap: 50px;
+    margin-top: 90px;
+  }
+
+.sidebar i:hover {
+  transform: scale(1.2);
+  color: #b6d17a;
+}
+
+/* Conteúdo ao lado da barra */
+main {
+  margin-left: 60px;
+  padding: 20px;
+}
+
+a {
+  color: white; /* Or any other desired color */
+  text-decoration: none; /* Removes the default underline */
+}
+
+a:visited {
+  color: white; /* Ensures visited links also don't turn purple */
+}

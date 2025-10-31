@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <title>animais</title>
+  <link rel="stylesheet" href="teste.css"/>
+</head>
+<body>
+    <h1>Lista de Animais Silvestres:</h1>
+    <img class="linha" src="../frontend/img/Line 1.png" alt="">
+    <div class="container-menu">
+        <aside class="sidebar">
+          <div class="icones">
+            <a href="./frontend/perfil.html"><i class="bi bi-person-fill"></i></a>
+            <!-- Ícone de casa -->
+           <a href="./frontend/principal.html"><i class="bi bi-house-fill"></i></a>
+            <!-- Ícone de megafone -->
+            <a href="./frontend/curiosidades.html"><i class="bi bi-chat-square-dots-fill"></i></a>
+            <!-- Ícone de pessoas -->
+          <a href="./frontend/grafico.html"><i class="bi bi-clipboard2-data-fill"></i></a>
+
+          <a href="./frontend/quiz.html"><i class="bi bi-check-square-fill"></i></a>
+          </div>
+</aside>
+
+  <div class="container">
+    <div class="gallery">
+      <div class="row">
+        <div>
+          <h4>tatu bola</h4>
+            <img src="./frontend/img/tatubola.png" alt="Imagem 1" onclick="openModal('tatubolaModal')" id="tatubola">
+        </div> 
+        <div id="tatubolaModal" class="modal">
+            <div class="modal-content">
+             <span class="close" onclick="closeModal('tatubolaModal')">&times;</span>
+            <h3>tatu bola</h3>
+            <h2>Descrição</h2>
+                <p>É um pequeno tatu com uma carapaça rígida que lhe permite se enrolar completamente em forma de bola quando se sente ameaçado — um comportamento único entre os tatus. Alimenta-se de insetos, formigas e cupins e costuma ser ativo ao entardecer.</p>
+                <br>
+                <h2>Ameaças</h2>
+                <p>Está em risco de extinção por causa do desmatamento, das queimadas e da expansão agropecuária, que destroem seu habitat natural. Além disso, sofre com a caça ilegal e o atropelamento em estradas.</p>
+                <br>
+                <h2>Habitat</h2>
+                    <p>O tatu-bola é encontrado principalmente no Cerrado e na Caatinga, regiões secas do Brasil. Vive em áreas de solo arenoso e vegetação baixa, onde pode cavar buracos e procurar alimento.</p>
+                    <br>
+                      <h2>Importância</h2>
+                <p>ÉContribui para o equilíbrio ambiental, ajudando a controlar insetos e aerar o solo, o que melhora a qualidade da vegetação.</p> 
+              </div>
+            </div>
+          <div>
+            <h4>Tamanduá-bandeira</h4>
+            <img src="./frontend/img/Tamanduá-bandeira.png" alt="Imagem 2" onclick="openModal('Tamanduá-bandeiraModal')" id="tamanduaBandeira" >
+          </div>
+        <div id="Tamanduá-bandeiraModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('Tamanduá-bandeiraModal')">&times;</span>
+                <h3>Tamanduá-bandeira</h3>
+                <h2>Descrição</h2>
+                <p>É um mamífero de grande porte, com focinho longo, língua comprida e pegajosa e uma cauda peluda que lembra uma bandeira — daí seu nome. Alimenta-se principalmente de formigas e cupins, usando suas garras fortes para abrir ninhos.</p>
+                <br>
+                <h2>Ameaças</h2>
+                <p>Está ameaçado de extinção devido ao desmatamento, queimadas, atropelamentos e caça ilegal. A perda do habitat natural é o principal fator que reduz suas populações.</p>
+                <br>
+                <h2>Habitat</h2>
+                    <p>Vive em campos, cerrados, florestas abertas e áreas de pastagem da América do Sul, especialmente no Brasil. Prefere regiões com formigueiros e cupinzeiros, onde encontra seu alimento principal.</p> 
+                    <br>
+                <h2>Importância</h2>
+                <p>É essencial para o ecossistema, pois controla populações de insetos e ajuda a manter o equilíbrio ambiental nas áreas onde vive.</p> 
+            </div>
+        </div>
+
+      </div>
+      <div class="row">
+        <div>
+          <h4>macaco-prego</h4>
+        <img src="./frontend/img/macaco-prego.png" alt="Imagem 3" onclick="openModal('macaco-pregoModal')" id="macacoPrego">
+        </div>
+        <div id="macaco-pregoModal" class="modal">
+          <div class="modal-content">
+              <span class="close" onclick="closeModal('macaco-pregoModal')">&times;</span>
+              <h3>macaco-prego</h3>
+                    <h2>Descrição</h2>
+                <p>É um primata inteligente e curioso, conhecido por usar pedras e galhos como ferramentas para abrir frutos e sementes. Tem pelagem marrom, cauda longa e preênsil (que ajuda na locomoção) e vive em grupos sociais organizados.</p>
+                <br>
+                <h2>Ameaças</h2>
+                <p>Está ameaçado principalmente pela destruição das florestas, caça ilegal e tráfico de animais silvestres. A perda do habitat por causa do desmatamento é o maior risco para sua sobrevivência.</p>
+                <br>
+                <h2>Habitat</h2>
+                    <p>O macaco-prego vive em diferentes tipos de florestas do Brasil, como a Mata Atlântica, a Amazônia e o Cerrado, geralmente em áreas com muitas árvores, onde pode se mover facilmente pelos galhos.</p> 
+                    <br>
+                <h2>Importância</h2>
+                <p>O macaco-prego ajuda a dispersar sementes e a manter o equilíbrio das florestas, sendo essencial para a regeneração natural do ambiente.</p> 
+          </div>
+      </div>
+      <div>
+        <h4>onça pintada</h4>
+        <img src="./frontend/img/onça pintada.png" alt="Imagem 4" onclick="openModal('onçapintadaModal')" id="onçaPintada">
+      </div>
+        <div id="onçapintadaModal" class="modal">
+          <div class="modal-content">
+              <span class="close" onclick="closeModal('onçapintadaModal')">&times;</span>
+              <h3>Onça-Pintada</h3>
+             <h2>Descrição</h2>
+                <p>É o maior felino das Américas e tem o corpo coberto por manchas escuras em forma de rosetas. É um excelente caçador, nadador e escalador, alimentando-se de capivaras, veados e outros animais.</p>
+                <br>
+                <h2>Ameaças</h2>
+                <p>Está ameaçada de extinção devido ao desmatamento, à perda de habitat e à caça ilegal, feita por medo ou para proteger rebanhos. Também sofre com os conflitos com fazendeiros e a redução das presas naturais.</p>
+                <br>
+                <h2>Habitat</h2>
+                    <p>Vive em florestas tropicais, cerrados e pantanais do Brasil. É mais comum na Amazônia e no Pantanal, onde encontra abrigo e presas em abundância.</p> 
+                    <br>
+                <h2>Importância</h2>
+                <p>Tem papel fundamental no equilíbrio ecológico, pois é um predador de topo, controlando populações de outras espécies e mantendo o equilíbrio da cadeia alimentar.</p> 
+          </div>
+      </div>
+        
+      </div>
+      <div class="row">
+        <div>
+          <h4>Arara azul</h4>
+          <img src="./frontend/img/arara-azul.png" alt="Imagem 5" onclick="openModal('araraAzulModal')">
+        </div>
+        <div id="araraAzulModal" class="modal">
+          <div class="modal-content">
+              <span class="close" onclick="closeModal('araraAzulModal')">&times;</span>
+              <h3>Arara azul</h3>
+             <h2>Descrição</h2>
+                <p>É a maior espécie de arara do mundo, com penas de um azul intenso e um bico forte capaz de quebrar cocos e sementes duras. Alimenta-se principalmente de frutos de palmeiras, como o acuri e o bocaiúva.</p>
+                <br>
+                <h2>Ameaças</h2>
+                <p>Está ameaçada de extinção devido à destruição do habitat, tráfico de animais silvestres e caça ilegal. O desmatamento reduz as árvores onde faz ninhos e busca alimento..</p>
+                <br>
+                <h2>Habitat</h2>
+                    <p>Vive principalmente no Pantanal, Cerrado e algumas regiões da Amazônia. Prefere áreas com palmeiras, onde encontra alimento e locais para fazer ninhos.</p> 
+                    <br>
+                <h2>Importância</h2>
+                <p>A arara-azul ajuda na dispersão de sementes, contribuindo para a regeneração das florestas e o equilíbrio dos ecossistemas brasileiros.</p> 
+          </div>
+      </div>
+      <div>
+        <h4>ararinha azul</h4>
+        <img src="./frontend/img/ararinhaazul.png" alt="Imagem 6" onclick="openModal('Papagaio-verdadeiroModal')">
+      </div>
+        <div id="Papagaio-verdadeiroModal" class="modal">
+          <div class="modal-content">
+              <span class="close" onclick="closeModal('Papagaio-verdadeiroModal')">&times;</span>
+              <h3>ararinha azul</h3>
+                 <h2>Descrição</h2>
+                <p>É uma pequena arara de cor azul intensa, com cauda longa e bico curvado. Mede cerca de 55 cm e tem um voo rápido e elegante. É conhecida por seu canto suave e comportamento social.</p>
+                <br>
+                <h2>Ameaças</h2>
+                <p>Está criticamente ameaçada de extinção devido à destruição de seu habitat, captura ilegal para o tráfico de animais silvestres e à escassez de árvores nativas onde faz seus ninhos.</p>
+                <br>
+                <h2>Habitat</h2>
+                    <p>A ararinha-azul é uma ave endêmica da Caatinga, no sertão da Bahia. Vive em matas ciliares — áreas próximas a rios e riachos — onde encontra abrigo e alimento, especialmente sementes de caraibeiras, sua árvore preferida.</p> 
+                    <br>
+                <h2>Importância</h2>
+                <p>A ararinha-azul é um símbolo da conservação ambiental no Brasil, representando os esforços para reintroduzir espécies ameaçadas na natureza e proteger a Caatinga.</p> 
+          </div>
+      </div>
+    </div>
+    <br>
+    <br>
+      <div class="row">
+        <div>
+          <h4>ringneck</h4>
+          <img src="./frontend/img/ringneck.png" alt="Imagem 7" onclick="openModal('ringneckModal')">
+        </div>
+        <div id="ringneckModal" class="modal">
+          <div class="modal-content">
+              <span class="close" onclick="closeModal('ringneckModal')">&times;</span>
+              <h3>ringneck</h3>
+             <h2>Descrição</h2>
+                <p>É um periquito de médio porte, com plumagem verde viva, bico vermelho e um anel preto e rosado em volta do pescoço nos machos — daí o nome ringneck (“pescoço com anel”). É uma ave inteligente e falante, capaz de imitar sons e palavras.</p>
+                <br>
+                <h2>Ameaças</h2>
+                <p>Em liberdade, sofre com a perda de habitat, a caça e o tráfico de animais silvestres, já que é muito procurado como pet. No Brasil, muitos ringnecks vivem em cativeiro e alguns acabam sendo abandonados ou escapando, o que pode afetar espécies nativas.</p>
+                <br>
+                <h2>Habitat</h2>
+                    <p>Vive em florestas abertas, savanas e áreas urbanas. É nativo da África e do sul da Ásia, mas se adaptou bem a outros locais, inclusive algumas regiões do Brasil, onde é criado como ave de estimação.</p> 
+                    <br>
+                <h2>Importância</h2>
+                <p>É uma ave carismática e social, que desperta interesse na conservação e no cuidado responsável com animais silvestres.</p> 
+          </div>
+      </div>
+
+      <div>
+        <h4>Iguana-verde</h4>
+        <br>
+        <br>
+        <br>
+        <img src="./frontend/img/Iguana-verde.png" alt="Imagem 8" onclick="openModal('Iguana-verdeModal')">
+      </div>
+        <div id="Iguana-verdeModal" class="modal">
+          <div class="modal-content">
+              <span class="close" onclick="closeModal('Iguana-verdeModal')">&times;</span>
+              <h3>Iguana-verde</h3>
+               <h2>Descrição</h2>
+                <p>É um réptil arborícola de cor verde intensa, com cauda longa e crista dorsal espinhosa. Pode medir até 2 metros de comprimento e alimenta-se principalmente de folhas, flores e frutas. Passa grande parte do tempo em árvores, tomando sol para regular a temperatura corporal.</p>
+                <br>
+                <h2>Ameaças</h2>
+                <p>Sofre com o desmatamento, que reduz seu habitat natural, e com a caça e o tráfico de animais silvestres, pois é capturada para o comércio ilegal de pets. Também é afetada pela poluição dos rios e pelas mudanças climáticas.</p>
+                <br>
+                <h2>Habitat</h2>
+                    <p>Vive em florestas tropicais, manguezais e matas úmidas da América Central e do Sul, incluindo a Amazônia brasileira. Prefere áreas próximas a rios e lagos, onde pode nadar e se refugiar.</p> 
+                    <br>
+                <h2>Importância</h2>
+                <p>A iguana-verde ajuda a espalhar sementes e manter o equilíbrio ecológico das florestas onde vive.</p> 
+          </div>
+      </div>
+      </div>
+
+      <div class="row">
+        <div>
+          <h4>Jararaca</h4>
+          <img src="./frontend/img/Jararaca.png" alt="Imagem 8" onclick="openModal('jararacaModal')">
+        </div>
+        <div id="jararacaModal" class="modal">
+          <div class="modal-content">
+              <span class="close" onclick="closeModal('jararacaModal')">&times;</span>
+              <h3>Jararaca</h3>
+              <h2>Descrição</h2>
+                <p>É uma cobra venenosa de tamanho médio, com cerca de 1,2 metro, corpo marrom com manchas em formato de triângulo e comportamento geralmente noturno. Alimenta-se de roedores, aves e anfíbios, sendo importante no controle de pragas.</p>
+                <br>
+                <h2>Ameaças</h2>
+                <p>Sofre com a perda de habitat devido ao desmatamento e à urbanização, além de ser morta por medo ou desconhecimento. Apesar disso, ainda é uma espécie relativamente comum.</p>
+                <br>
+                <h2>Habitat</h2>
+                    <p>Vive em florestas tropicais, matas e áreas úmidas do Sudeste e Sul do Brasil. Pode ser encontrada também em plantações e pastos, adaptando-se bem a ambientes modificados pelo homem.</p> 
+                    <br>
+                <h2>Importância</h2>
+                <p>Seu veneno é usado na produção de remédios, como o captopril, utilizado no tratamento da pressão alta, e ela ajuda a manter o equilíbrio ecológico controlando populações de pequenos animais.</p> 
+          </div>
+      </div>
+      <div>
+        <h4>Tucano-toco</h4>
+        <img src="./frontend/img/Tucano-toco.png" alt="Imagem 7" onclick="openModal('Tucano-tocoModal')">
+      </div>
+        <div id="Tucano-tocoModal" class="modal">
+          <div class="modal-content">
+              <span class="close" onclick="closeModal('Tucano-tocoModal')">&times;</span>
+              <h3>Tucano-toco</h3>
+                <h2>Descrição</h2>
+                <p>É o maior tucano do mundo, conhecido por seu bico grande e colorido, que pode medir até 20 cm. Alimenta-se de frutas, insetos e pequenos animais. Seu bico ajuda na regulação da temperatura corporal e na alimentação.</p>
+                <br>
+                <h2>Ameaças</h2>
+                <p>Apesar de não estar em risco crítico, o tucano-toco sofre com o desmatamento, o tráfico de animais silvestres e a perda de habitat. Essas ameaças reduzem as áreas onde ele pode viver e se reproduzir.</p>
+                <br>
+                <h2>Habitat</h2>
+                  <p>Vive em florestas tropicais, cerrados e matas ciliares de várias regiões do Brasil, especialmente no Centro-Oeste e Sudeste. Também pode ser encontrado em áreas abertas com árvores isoladas.</p> 
+                  <br>
+                <h2>Importância</h2>
+                <p>É fundamental para o ecossistema, pois espalha sementes ao se alimentar de frutas, ajudando na regeneração das florestas.</p>   
+          </div>
+      </div>
+      </div>
+      <br>
+      <br>
+      <br>
+      <div class="row">
+        <div>
+          <h4>Pássaro-preto</h4>
+          <br>
+          <img src="./frontend/img/Pássaro-preto.png" alt="Imagem 8" onclick="openModal('pássaro-pretoModal')">
+        </div>
+        <div id="pássaro-pretoModal" class="modal">
+          <div class="modal-content">
+              <span class="close" onclick="closeModal('pássaro-pretoModal')">&times;</span>
+              <h3>Pássaro-preto</h3>
+                     <h2>Descrição</h2>
+                <p>O pássaro-preto tem penas negras com brilho azulado, bico forte e curvado e é conhecido pelo canto alto e repetitivo. Alimenta-se de frutos, sementes e pequenos insetos, sendo uma ave bastante adaptável.</p>
+                <br>
+                <h2>Ameaças</h2>
+                <p>Apesar de ainda ser comum, enfrenta redução do habitat devido ao desmatamento, uso de agrotóxicos e captura ilegal para o comércio de aves.</p>
+                <br>
+                <h2>Habitat</h2>
+                  <p>Vive em campos, cerrados, áreas rurais e beiras de florestas de quase todo o Brasil. Costuma fazer ninhos em árvores altas, postes ou até construções humanas.</p> 
+                  <br>
+                <h2>Importância</h2>
+                <p>Ajuda na dispersão de sementes e no controle de insetos, tendo papel importante na manutenção do equilíbrio dos ecossistemas onde vive.</p>
+          </div>
+      </div>
+      <div>
+        <h4>Mico-leão-dourado</h4>
+        <br>
+        <br>
+        <img src="./frontend/img/Mico-leão-dourado.png" alt="Imagem 7" onclick="openModal('mico-leão-douradoModal')">
+      </div>
+        <div id="mico-leão-douradoModal" class="modal">
+          <div class="modal-content">
+              <span class="close" onclick="closeModal('mico-leão-douradoModal')">&times;</span>
+              <h3>Mico-leão-dourado</h3>
+           <h2>Descrição</h2>
+                <p>É um pequeno primata com pelos dourados e brilhantes, que lembram a juba de um leão. Alimenta-se de frutas, insetos, néctar e pequenos vertebrados. Vive em grupos familiares e é muito ágil nas copas das árvores.</p>
+                <br>
+                <h2>Ameaças</h2>
+                <p>Está ameaçado de extinção devido ao desmatamento da Mata Atlântica, que reduziu drasticamente seu habitat. A caça e o tráfico de animais silvestres também contribuíram para a diminuição da espécie.</p>
+                <br>
+                <h2>Habitat</h2>
+                  <p>Vive nas florestas tropicais da Mata Atlântica, principalmente no estado do Rio de Janeiro. Prefere áreas com árvores altas e densas, onde encontra abrigo e alimento.</p> 
+                  <br>
+                <h2>Importância</h2>
+                <p>Tem papel fundamental na dispersão de sementes, ajudando na regeneração da floresta e no equilíbrio do ecossistema.</p>
+          </div>
+      </div>
+      </div>
+      <div class="row">
+        <div>
+          <h4>Jacaré-do-papo-amarelo</h4>
+          <br>
+          <br>
+          <br>
+          <img src="./frontend/img/Jacaré-do-papo-amarelo.png" alt="Imagem 8" onclick="openModal('jacaré-do-papo-amareloModal')">
+        </div>
+        <div id="jacaré-do-papo-amareloModal" class="modal">
+          <div class="modal-content">
+              <span class="close" onclick="closeModal('jacaré-do-papo-amareloModal')">&times;</span>
+              <h3>Jacaré-do-papo-amarelo</h3>
+               <h2>Descrição</h2>
+                <p>Mede entre 2 e 3 metros de comprimento e recebe esse nome por causa da mancha amarelada embaixo do pescoço. Alimenta-se de peixes, aves, pequenos mamíferos e répteis, sendo um importante predador dos ecossistemas aquáticos.</p>
+                <br>
+                <h2>Ameaças</h2>
+                <p>Está ameaçado de extinção devido à destruição de habitats, poluição dos rios, caça ilegal e captura para comércio de couro e criação doméstica.</p>
+                <br>
+                <h2>Habitat</h2>
+                  <p>Vive em rios, lagoas, pântanos e manguezais do Brasil, Argentina, Uruguai e Paraguai. Prefere áreas alagadas com vegetação densa, onde encontra abrigo e alimento.</p> 
+                  <br>
+                <h2>Importância</h2>
+                <p>Tem papel fundamental no equilíbrio dos ambientes aquáticos, ajudando a controlar populações de presas e manter a saúde dos ecossistemas.</p>
+          </div>
+      </div>
+      <div>
+        <br>
+        <br>
+        <br>
+        <h4>Tatu-galinha</h4>
+        <img src="./frontend/img/Tatu-galinha.png" alt="Imagem 7" onclick="openModal('tatu-galinhaModal')">
+      </div>
+        <div id="tatu-galinhaModal" class="modal">
+          <div class="modal-content">
+              <span class="close" onclick="closeModal('tatu-galinhaModal')">&times;</span>
+              <h3>Tatu-galinha</h3>
+               <h2>Descrição</h2>
+                <p>Mede entre 2 e 3 metros de comprimento e recebe esse nome por causa da mancha amarelada embaixo do pescoço. Alimenta-se de peixes, aves, pequenos mamíferos e répteis, sendo um importante predador dos ecossistemas aquáticos.</p>
+                <br>
+                <h2>Ameaças</h2>
+                <p>Está ameaçado de extinção devido à destruição de habitats, poluição dos rios, caça ilegal e captura para comércio de couro e criação doméstica.</p>
+                <br>
+                <h2>Habitat</h2>
+                  <p>Vive em rios, lagoas, pântanos e manguezais do Brasil, Argentina, Uruguai e Paraguai. Prefere áreas alagadas com vegetação densa, onde encontra abrigo e alimento.</p> 
+                  <br>
+                <h2>Importância</h2>
+                <p>Tem papel fundamental no equilíbrio dos ambientes aquáticos, ajudando a controlar populações de presas e manter a saúde dos ecossistemas.</p>
+          </div>
+      </div>
+      </div>
+ 
+    </div>
+    <div class="fixed-text">
+        <h2>Leis de Proteção a Espécies Silvestres</h2>
+        <br>
+        <ul>
+          <strong>Lei nº 9.605/1998 (Lei de Crimes Ambientais)</strong>
+          <li>Proíbe a caça, transporte e venda de animais silvestres sem autorização.</li>
+          <li>Penaliza maus-tratos e destruição de habitats.</li>
+          <br>
+          <strong>Decreto nº 6.514/2008:</strong>
+          <li>Regulamenta infrações ambientais e estabelece multas para tráfico de animais.</li>
+          <li><strong>Lei nº 5.197/1967:</strong> Protege fauna silvestre.</li>
+          <br>
+          <strong>Lei nº 5.197/1967 (Código de Fauna Brasileira)</strong>
+          <li>Determina que toda a fauna silvestre pertence à União.</li>
+          <li>Proíbe caça profissional e venda de animais silvestres <br> sem permissão.</li>
+          <li>Convenção sobre o Comércio Internacional das Espécies da Flora e Fauna Selvagens Ameaçadas de Extinção (CITES)</li>
+          <li>Acordo internacional assinado pelo Brasil que regula o comércio de espécies ameaçadas.</li>
+          <br>
+          <strong>Lei nº 12.651/2012 (Código Florestal Brasileiro)</strong>
+          <li>Protege habitats naturais de espécies silvestres.</li>
+          <br>
+          <strong>Portaria IBAMA nº 93/1998</strong>
+          <li>Regula o comércio legal de animais silvestres criados em cativeiro.</li>
+        </ul>
+    </div>
+  </div>
+  <script src="hover.js"></script>
+  <script src="./back/script.js"></script>
+</body>
+</html>

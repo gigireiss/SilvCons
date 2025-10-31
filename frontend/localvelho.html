@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Localização</title>
+    <link rel="stylesheet" href="localização.css">
+    <link rel="stylesheet" href="caminho/para/fontawesome.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="icon" href="caminho/para/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<body>
+    <h1>Lista Organizada por Localização</h1>
+        <img class="linha" src="../frontend/img/Line 1.png" alt="">
+    <div class="container">
+        <!-- Sidebar -->
+         <aside class="sidebar">
+          <div class="icones">
+            <!-- Ícone de casa -->
+            <i class="bi bi-house"></i>
+            <!-- Ícone de megafone -->
+            <i class="bi bi-megaphone"></i>
+            <!-- Ícone de pessoas -->
+            <i class="bi bi-people"></i>
+          </div>
+</aside>
+
+        <!-- Conteúdo principal -->
+        <main class="content">
+            <!-- Barra de Pesquisa -->
+            <select id="characterClass" onchange="buscarLocalidades()">
+                <option value="">Selecione um estado</option>
+                <option value="RS">Rio Grande do Sul (RS)</option>
+                <option value="SP">São Paulo (SP)</option>
+                <option value="AM">Amazonas (AM)</option>
+                <option>Bahia(BA)</option>
+                <option>Ceará(CE)</option>
+                <option>Distrito Federal(DF)</option>
+                <option>Espírto Santo(ES)</option>
+                <option>Goiás(GO)</option>
+                <option>Maranhão(MA)</option>
+                <option>Mato Grosso(MT)</option>
+                <option>Mato grosso do Sul(MS)</option>
+                <option>Minas Gerais(MG)</option>
+                <option>Pará(PA)</option>
+                <option>Paraíba(PB)</option>
+                <option>Paraná(PR)</option>
+                <option>Pernambuco(PE)</option>
+                <option>Piauí(PI)</option>
+                <option>Rio de Janeiro(RJ)</option>
+                <option>Rio Grande do Norte(RN)</option>
+                <option>Rio grande do Sul(RS)</option>
+                <option>Rondonia(RO)</option>
+                <option>Roraima(RR)</option>
+                <option>Santa Catarina(SC)</option>
+                <option>São Paulo(SP)</option>
+                <option>Sergipe(SE)</option>
+                <option>Tocantins(TO)</option>
+            </select>
+        
+        <!-- Lista de Organizações -->
+        <div class="info-box">
+                <div class="info-item">
+                    <div class="tag">Porto Alegre</div>
+                    <div class="details">
+                        <h3>Voluntários da Fauna</h3>
+                        <p>Organização sem fins lucrativos que reabilita animais silvestres</p>
+                        <small>Rua Mal. José Inácio da Silva, 40A, Porto Alegre, RS - 90520032</small>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="tag">Porto Alegre</div>
+                    <div class="details">
+                        <h3>Pet Fauna</h3>
+                        <p>Hospital veterinário | Plantão 24 horas</p>
+                        <small>Rua Professor Langendonck, 14, Porto Alegre, RS - 90820-060</small>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="tag">São Leopoldo</div>
+                    <div class="details">
+                        <h3>Resgate de Fauna Silvestre</h3>
+                        <p>Encaminhamento de fauna silvestre para atendimento veterinário de emergência.</p>
+                        <small>Contato: (51) 98878-7340 | fauna@resgate.rs</small>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="tag">São Leopoldo</div>
+                    <div class="details">
+                        <h3>Resgate de Fauna Silvestre</h3>
+                        <p>Encaminhamento de fauna silvestre para atendimento veterinário de emergência.</p>
+                        <small>Contato: (51) 98878-7340 | fauna@resgate.rs</small>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="tag">São Leopoldo</div>
+                    <div class="details">
+                        <h3>Resgate de Fauna Silvestre</h3>
+                        <p>Encaminhamento de fauna silvestre para atendimento veterinário de emergência.</p>
+                        <small>Contato: (51) 98878-7340 | fauna@resgate.rs</small>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="tag">São Leopoldo</div>
+                    <div class="details">
+                        <h3>Resgate de Fauna Silvestre</h3>
+                        <p>Encaminhamento de fauna silvestre para atendimento veterinário de emergência.</p>
+                        <small>Contato: (51) 98878-7340 | fauna@resgate.rs</small>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="tag">São Leopoldo</div>
+                    <div class="details">
+                        <h3>Resgate de Fauna Silvestre</h3>
+                        <p>Encaminhamento de fauna silvestre para atendimento veterinário de emergência.</p>
+                        <small>Contato: (51) 98878-7340 | fauna@resgate.rs</small>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+    <div class="fixed-text">
+        <!-- Mapa -->
+        <aside class="map">
+            <iframe src="https://www.google.com/maps/d/embed?mid=1IjKhjiZUU4cuolyifG5XuEa180Q-C50&ehbc=2E312F"  width="340" height="280"></iframe>
+        </aside>
+    </div>
+    </div>
+
+    <script>
+async function buscarLocalidades() {
+  try {
+    const response = await fetch('http://localhost:3000/seu-endpoint');
+    if (!response.ok) {
+      throw new Error(`Erro HTTP! status: ${response.status}`);
+    }
+    const data = await response.json();
+    console.log(data);
+  } catch (error) {
+    console.error('Erro ao buscar dados:', error);
+  }
+}
+        </script>
+        
+
+</body>
+</html>

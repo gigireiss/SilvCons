@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Literata", serif;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+h1 {
+  margin-top: 10px;
+  text-align: center;
+  color: #406113;
+  font-size: 35px;
+}
+.linha {
+  width: 95vw;
+}
+
+.container {
+  display: flex;
+}
+
+.sidebar {
+  background-color: #2f4f20;
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 2;
+}
+
+h2 {
+  background-color: white;
+  /* verde escuro semi-transparente */
+  color: rgba(77, 133, 51, 0.795);
+  margin-bottom: 10px;
+  font-size: 15px;
+  align-items: center;
+  text-align: center;
+}
+
+
+.icones{
+    color: #fff;
+    display: grid;
+    gap: 50px;
+    margin-top: 90px;
+  }
+
+.sidebar i {
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.sidebar i:hover {
+  transform: scale(1.2);
+  color: #b6d17a;
+}
+
+.gallery {
+  width: 65%;
+  padding: 20px;
+  overflow-y: auto;
+  height: 100vh;
+}
+
+.row {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.row img {
+  max-width: 250px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  display: block;
+}
+
+
+
+
+h4 {
+  background-color: rgba(77, 133, 51, 0.7);
+  /* verde escuro semi-transparente */
+  color: white;
+  padding: 5px 10px;
+  font-size: 17px;
+  border-radius: 5px;
+  text-align: center;
+  margin-left: 60px;
+  margin-top: 10px;
+  width: 150px;
+}
+
+.fixed-text {
+  position: sticky;
+  top: 0;
+  width: 35%;
+  height: 100vh;
+  padding: 20px 60px;
+  background-color: #ffffff;
+  border-left: 2px solid #ccc;
+}
+
+.fixed-text li {
+  font-size: 15px;
+
+}
+
+.fixed-text h2 {
+  font-size: 20px;
+  color: #475e24;
+}
+
+strong {
+  background-color: rgba(77, 133, 51, 0.7);
+  /* verde escuro semi-transparente */
+  color: white;
+
+  font-size: 15px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #2746004d;
+  padding-top: 60px;
+}
+
+.modal-content {
+  background-color: #88a061;
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #1c642c;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  height: 67vh;
+}
+
+.modal-content h3 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 24px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+
+}
+
+.modal-content p {
+  font-size: 15px;
+  color: #fff;
+}
+
+.modal-content ul {
+  margin-top: 10px;
+  display: flex;
+  padding-left: 20px;
+  gap: 10px;
+  font-size: 15px;
+  text-align: center;
+  color: #fff;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-top: -10px;
+
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+
+}
+
+a {
+  color: white; /* Or any other desired color */
+  text-decoration: none; /* Removes the default underline */
+}
+
+a:visited {
+  color: white; /* Ensures visited links also don't turn purple */
+}

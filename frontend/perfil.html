@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil do Usuário</title>
+  <link rel="stylesheet" href="perfil.css">
+</head>
+<body>
+
+  <div class="perfil-container">
+    <img src="./img/ararinhaazul.png" alt="Avatar do usuário" class="perfil-avatar" id="perfilAvatar">
+    <h2 id="nomeUsuario">Nome do Usuário</h2>
+    <p id="emailUsuario">email@exemplo.com</p>
+
+    <button id="editarBtn">Editar Perfil</button>
+    <button id="deletarBtn" class="botao-vermelho">Deletar Conta</button>
+
+    <div class="perfil-info">
+      <h3>Informações do Usuário</h3>
+      <p><strong>Localização:</strong> <span id="localUsuario">Não informada</span></p>
+      <p><strong>CPF:</strong> <span id="cpfUsuario">000.000.000-00</span></p>
+    </div>
+  </div>
+
+  <!-- Modal de Edição -->
+  <div id="editModal" class="modal modal-hidden">
+    <div class="modal-conteudo">
+      <h3>Editar Perfil</h3>
+      <form id="editForm">
+        <label for="editNome">Nome</label>
+        <input type="text" id="editNome">
+        <div class="botoes-modal">
+          <button type="button" id="cancelEditBtn" class="botao-cinza">Cancelar</button>
+          <button type="submit" class="botao-azul">Salvar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Modal de Exclusão -->
+  <div id="deleteModal" class="modal modal-hidden">
+    <div class="modal-conteudo">
+      <h3>Confirmar Exclusão</h3>
+      <p>Tem certeza que deseja excluir sua conta? Esta ação não pode ser desfeita.</p>
+      <div class="botoes-modal">
+        <button type="button" id="cancelDeleteBtn" class="botao-cinza">Cancelar</button>
+        <button type="button" id="confirmDeleteBtn" class="botao-vermelho">Sim, Excluir</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast de notificação -->
+  <div id="toast" class="toast modal-hidden">Mensagem aqui</div>
+
+  <script src="perfil.js"></script>
+</body>
+</html>

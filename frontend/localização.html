@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Localização</title>
+  <link rel="stylesheet" href="localização.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="icon" href="caminho/para/favicon.ico">
+</head>
+<body>
+  <h1>Lista Organizada por Localização</h1>
+  <img class="linha" src="../frontend/img/Line 1.png" alt="">
+
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="icones">
+       <a href="./perfil.html"><i class="bi bi-person-fill"></i></a>
+            <!-- Ícone de casa -->
+           <a href="./principal.html"><i class="bi bi-house-fill"></i></a>
+            <!-- Ícone de megafone -->
+        <a href="./curiosidades.html"><i class="bi bi-chat-square-dots-fill"></i></a>
+
+        <a href="./grafico.html"><i class="bi bi-clipboard2-data-fill"></i></a>
+
+        <a href="./quiz.html"><i class="bi bi-check-square-fill"></i></a>
+      </div>
+    </aside>
+
+    <!-- Conteúdo principal -->
+    <main class="content">
+      <!-- Barra de Pesquisa -->
+      <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Pesquisar na página..." onkeyup="filtrarPagina()">
+        <button onclick="limparPesquisa()">Limpar</button>
+      </div>
+
+      <!-- Lista de Localidades com scroll -->
+      <div id="listaLocalidades" class="listaLocalidades">
+        <p>Carregando localidades...</p>
+      </div>
+    </main>
+
+    <!-- Mapa fixo ao lado -->
+    <aside class="fixed-map">
+      <iframe id="mapFrame"
+        src="https://www.google.com/maps/embed?pb=!4v0"
+        width="90%" height="80%" style="border:0;" allowfullscreen="" loading="lazy">
+      </iframe>
+    </aside>
+  </div>
+  <footer>
+  <p>🌿 Site de Conscientização - Contra o Tráfico de Animais Silvestres © 2025</p>
+</footer>
+
+  <script src="localização.js"></script>
+
+</body>
+</html>
