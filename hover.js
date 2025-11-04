@@ -48,3 +48,14 @@ araraAzul.addEventListener("mouseenter", () => {
 araraAzul.addEventListener("mouseleave", () => {
   araraAzul.src = "./frontend/img/arara-azul.png";
 });
+
+
+const ararinhaAzul = document.getElementById("ararinhaAzul");
+
+ararinhaAzul.addEventListener("mouseenter", () => {
+  ararinhaAzul.src = "./frontend/img/Ararinhaazul-real.png";
+});
+
+ararinhaAzul.addEventListener("mouseleave", () => {
+  ararinhaAzul.src = "./frontend/img/ararinhaazul.png";
+});
