@@ -38,3 +38,13 @@ onçaPintada.addEventListener("mouseenter", () => {
 onçaPintada.addEventListener("mouseleave", () => {
   onçaPintada.src = "./frontend/img/onça pintada.png";
 });
+
+const araraAzul = document.getElementById("araraAzul");
+
+araraAzul.addEventListener("mouseenter", () => {
+ araraAzul.src = "./frontend/img/Arara-azul-real.png";
+});
+
+araraAzul.addEventListener("mouseleave", () => {
+  araraAzul.src = "./frontend/img/arara-azul.png";
+});

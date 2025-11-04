@@ -20,8 +20,7 @@ async function cadastrar(event) {
 
   const name     = document.getElementById('name').value;
   const email    = document.getElementById('email').value;
-  const password = document.getElementById('password').value;
-
+ const password = document.getElementById('password_login').value;
   const data = {name,email,password}
 
   const response = await fetch('http://localhost:3001/usuario/cadastrar', {
