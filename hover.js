@@ -59,3 +59,44 @@ ararinhaAzul.addEventListener("mouseenter", () => {
 ararinhaAzul.addEventListener("mouseleave", () => {
   ararinhaAzul.src = "./frontend/img/ararinhaazul.png";
 });
+
+const ringneck= document.getElementById("ringneck");
+
+ringneck.addEventListener("mouseenter", () => {
+  ringneck.src = "./frontend/img/ringneck-real.png";
+});
+
+ringneck.addEventListener("mouseleave", () => {
+  ringneck.src = "./frontend/img/ringneck.png";
+});
+
+const IguanaVerde= document.getElementById("IguanaVerde");
+
+IguanaVerde.addEventListener("mouseenter", () => {
+  IguanaVerde.src = "./frontend/img/Iguana-verde-real.png";
+});
+
+IguanaVerde.addEventListener("mouseleave", () => {
+  IguanaVerde.src = "./frontend/img/Iguana-verde.png";
+});
+
+const jararaca= document.getElementById("jararaca");
+
+jararaca.addEventListener("mouseenter", () => {
+  jararaca.src = "./frontend/img/jararaca-real.png";
+});
+
+jararaca.addEventListener("mouseleave", () => {
+  jararaca.src = "./frontend/img/Jararaca.png";
+});
+
+const tucanoToco= document.getElementById("tucanoToco");
+
+tucanoToco.addEventListener("mouseenter", () => {
+  tucanoToco.src = "./frontend/img/tucano-toco-real.png";
+});
+
+tucanoToco.addEventListener("mouseleave", () => {
+  tucanoToco.src = "./frontend/img/tucano-toco.png";
+});
+
