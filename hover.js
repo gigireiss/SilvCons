@@ -100,3 +100,22 @@ tucanoToco.addEventListener("mouseleave", () => {
   tucanoToco.src = "./frontend/img/tucano-toco.png";
 });
 
+const passaroPreto= document.getElementById("passaroPreto");
+
+passaroPreto.addEventListener("mouseenter", () => {
+  passaroPreto.src = "./frontend/img/Pássaro-preto-real.png";
+});
+
+passaroPreto.addEventListener("mouseleave", () => {
+  passaroPreto.src = "./frontend/img/Pássaro-preto.png";
+});
+
+const MicoLeao= document.getElementById("MicoLeao");
+
+MicoLeao.addEventListener("mouseenter", () => {
+  MicoLeao.src = "./frontend/img/Mico-leão-dourado-real.png";
+});
+
+MicoLeao.addEventListener("mouseleave", () => {
+  MicoLeao.src = "./frontend/img/Mico-leão-dourado.png";
+});
